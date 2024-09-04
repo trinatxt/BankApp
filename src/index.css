@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  button {
+    @apply border py-2 px-3 rounded-full;
+  }
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;}
+
+.wrapper {
+  width: 950px; /* Increase the width */
+  height: auto; /* Remove fixed height */
+  background: #FFFFFF;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px 40px;
+}
+
+.wrapper h1 {
+  font-size: 36px;
+  text-align: center;
+  background: #E0E0E0;
+  margin-bottom: 40px;
+  border: 1px solid #E0E0E0;
+  border-radius: 40px;
+}
+
+.wrapper .input.box {
+  position: relative;
+  width: 70%;
+  height: 50px;
+  align-items: center;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.input.box {
+  position: relative;
+  width: 300px; /* Example width; adjust as needed */
+  margin: 0 auto; /* Center the input box horizontally */
+  text-align: center; /* Center align text and icons inside */
+  padding: 10px; /* Adjust padding as per your design */
+}
+
+.input.box input {
+  width: 100%;
+  align-items: center;
+  padding: 10px 20px;
+  border: 1px solid #E0E0E0;
+  border-radius: 40px;
+  font-size: 16px;
+  color: #000000;
+  padding: 10px 45px 10px 10px;
+}
+
+.input.box input::placeholder {
+  position: absolute;
+  align-items: center;
+  left: 15px;
+}
+
+.input.box .icon {
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+}
+
+.wrapper .forgot-pwd {
+  width: 85%;
+  text-align: right;
+  align-items: center;
+}
+
+.forgot-pwd a:hover {
+  text-decoration: underline;
+}
+
+.wrapper button {
+  width: full;
+  height: full;
+  margin-left: auto;
+  margin-right: auto;
+  background: #E0E0E0;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #000000;
+  display: block;
+}
+
+.wrapper .register-link {
+  margin-left: 100px;
+  font-size: 14.5px;
+  padding: 50px;
+}
+
+.register-link p a {
+  color: #E0E0E0;
+  font-weight: 600;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
